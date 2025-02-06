@@ -1,0 +1,30 @@
+# AI Adversarial Attack Defense
+
+## Overview
+This project generates adversarial examples to test the robustness of AI models against adversarial attacks. The script introduces small perturbations to an input image to deceive a deep learning model.
+
+## Installation & Setup
+1. Install dependencies:
+   ```bash
+   pip install tensorflow numpy pillow
+   ```
+2. Place a sample image in the project directory (e.g., `sample.jpg`).
+3. Run the script:
+   ```bash
+   python adversarial_attack.py
+   ```
+
+## How It Works
+- Loads a **pre-trained MobileNetV2 model**.
+- Converts an image into a tensor and computes gradients with respect to the model's prediction.
+- Applies **small perturbations** to the image to deceive the model.
+
+## Example Output
+```
+Adversarial example generated successfully.
+```
+
+## Future Enhancements
+- Implement **multiple adversarial attack techniques**.
+- Test against **different deep learning models**.
+- Integrate **defense mechanisms** to improve AI robustness.
